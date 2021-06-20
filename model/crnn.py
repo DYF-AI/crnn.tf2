@@ -1,6 +1,5 @@
 import json
 import tensorflow as tf
-#from models.config import NUM_CLASSES, OUTPUT_SHAPE
 from config.load_yaml import load_config
 
 config = load_config()
