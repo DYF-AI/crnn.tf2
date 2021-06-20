@@ -1,0 +1,20 @@
+
+work_space: &work_space /media/dyf-ai/code/src/ocr/crnn.tf2/
+
+data:
+  shape: (32,320,3)
+
+
+path:
+  test_path: !!python/object/apply:os.path.join [*work_space, "dataset/test/"]
+  json_path: !!python/object/apply:os.path.join [*work_space, "dataset/char.json"]
+  table_path: !!python/object/apply:os.path.join [*work_space, "dataset/table.txt"]
+  
+batch_size: 64
+buffer_size: 10000
+
+is_save_model: False
+
+version: &version "1"
+
+save_model_path: !!python/object/apply:os.path.join [*work_space, "output/crnn/", *version]
