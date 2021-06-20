@@ -2,7 +2,11 @@
 work_space: &work_space /media/dyf-ai/code/src/ocr/crnn.tf2/
 
 data:
-  shape: (32,320,3)
+  shape: 
+    - 32
+    - 320
+    - 3
+
 
 
 path:

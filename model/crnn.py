@@ -15,7 +15,7 @@ with open("dataset/table.txt", 'w') as fw:
 NUM_CLASSES = len(chardic) + 3
 
 model = tf.keras.Sequential([
-        tf.keras.layers.Conv2D(filters=64, kernel_size=3, padding='same',activation='relu',input_shape=(32,320,3)),
+        tf.keras.layers.Conv2D(filters=64, kernel_size=3, padding='same',activation='relu',input_shape=config["data"]["shape"]),
         tf.keras.layers.MaxPool2D(pool_size=(2, 2), padding='valid'),
         tf.keras.layers.Conv2D(filters=128, kernel_size=3,padding='same',activation='relu'),
         tf.keras.layers.MaxPool2D(pool_size=(2, 2), padding='valid'),

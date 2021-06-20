@@ -4,7 +4,6 @@ import random
 import pickle
 from pathlib import Path
 import tensorflow as tf
-# from model.config import TABLE_PATH, NUM_CLASSES,OUTPUT_SHAPE, WORK_PATH
 from config.load_yaml import load_config
 from model.crnn import NUM_CLASSES
 
